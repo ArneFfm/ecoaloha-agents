@@ -1,0 +1,32 @@
+{
+  "name": "@ecoaloha/sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Official EcoAloha JavaScript SDK and CLI",
+  "homepage": "https://ecoaloha.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArneFfm/ecoaloha-agents.git",
+    "directory": "packages/sdk-js"
+  },
+  "license": "UNLICENSED",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "bin": {
+    "ecoaloha": "./cli.js"
+  },
+  "files": ["index.js", "index.d.ts", "cli.js", "README.md"],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}

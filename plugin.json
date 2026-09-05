@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ecoaloha",
+  "version": "1.0.0",
+  "description": "Find outdoor experiences and integrate the EcoAloha API.",
+  "homepage": "https://ecoaloha.com/developers",
+  "repository": "https://github.com/ArneFfm/ecoaloha-agents"
+}

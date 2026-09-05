@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+__pycache__/
+*.egg-info/
+*.tgz
+.env*
+.npmrc
+.pypirc
+.mcpregistry*
+mcp-publisher

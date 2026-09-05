@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "ecoaloha": {
+      "type": "streamable-http",
+      "url": "https://ecoaloha.com/mcp"
+    },
+    "ecoaloha-docs": {
+      "type": "streamable-http",
+      "url": "https://ecoaloha.com/mcp/docs"
+    }
+  }
+}
