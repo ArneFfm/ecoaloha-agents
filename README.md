@@ -8,6 +8,7 @@ Read the [developer portal](https://ecoaloha.com/developers) and [OpenAPI specif
 Use Streamable HTTP at https://ecoaloha.com/mcp. No API key is required.
 The separate documentation server is https://ecoaloha.com/mcp/docs.
 The [server card](https://ecoaloha.com/.well-known/mcp/server-card.json) lists the product tools.
+Verified listing: [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.ArneFfm%2Fecoaloha/versions/latest).
 
 ## Install skills
 
@@ -15,14 +16,15 @@ The [server card](https://ecoaloha.com/.well-known/mcp/server-card.json) lists t
 npx skills add ArneFfm/ecoaloha-agents
 ```
 
-- `ecoaloha-trip-planning`: find and compare outdoor experiences.
-- `ecoaloha-api-integration`: integrate and test the HTTP API or MCP server.
+- [ecoaloha-trip-planning](https://skills.sh/arneffm/ecoaloha-agents/ecoaloha-trip-planning): find and compare outdoor experiences.
+- [ecoaloha-api-integration](https://skills.sh/arneffm/ecoaloha-agents/ecoaloha-api-integration): integrate and test the HTTP API or MCP server.
 
 The root `plugin.json` and `mcp.json` also form an Agent Plugin.
 
 ## SDKs and CLI
 
-Registry publication is pending. Install from this checkout:
+Download installable packages from [release 0.1.0](https://github.com/ArneFfm/ecoaloha-agents/releases/tag/v0.1.0).
+Publication to npm and PyPI is pending. You can also install from this checkout:
 
 ```sh
 npm install ./packages/sdk-js
