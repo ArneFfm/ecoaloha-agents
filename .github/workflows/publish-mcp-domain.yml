@@ -1,0 +1,23 @@
+name: Publish domain-verified MCP registry
+on: workflow_dispatch
+permissions:
+  contents: read
+concurrency:
+  group: publish-mcp-domain
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Install official publisher
+        run: |
+          curl --fail --location https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz -o publisher.tar.gz
+          tar -xzf publisher.tar.gz mcp-publisher
+      - name: Verify domain and publish
+        env:
+          MCP_REGISTRY_PRIVATE_KEY: ${{ secrets.MCP_REGISTRY_PRIVATE_KEY }}
+        run: |
+          test -n "$MCP_REGISTRY_PRIVATE_KEY"
+          ./mcp-publisher login http --domain ecoaloha.com --private-key "$MCP_REGISTRY_PRIVATE_KEY"
+          ./mcp-publisher publish server-domain.json

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.ecoaloha/ecoaloha",
+  "title": "EcoAloha",
+  "description": "Search and compare outdoor experiences. Public keyless API; booking and payment happen on Viator.",
+  "version": "1.1.0",
+  "websiteUrl": "https://ecoaloha.com/developers",
+  "repository": {
+    "url": "https://github.com/ArneFfm/ecoaloha-agents",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://ecoaloha.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ecoaloha.com/mcp"
+    }
+  ]
+}
