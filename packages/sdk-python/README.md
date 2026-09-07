@@ -2,7 +2,8 @@
 
 Official source: https://github.com/ArneFfm/ecoaloha-agents.
 API documentation: https://ecoaloha.com/developers.
-PyPI publication is pending. Install from a checkout with `pip install ./packages/sdk-python`.
+Python 3.10 or later is required. Install with `python3 -m pip install ecoaloha`.
+From a checkout, use `python3 -m pip install ./packages/sdk-python`.
 
 ```python
 from ecoaloha import EcoAloha

@@ -32,7 +32,13 @@ npm install @ecoaloha/sdk
 npx --package=@ecoaloha/sdk ecoaloha --sandbox destinations
 ```
 
-PyPI publication is pending. You can also install from this checkout:
+The Python SDK is published as `ecoaloha` on PyPI. Python 3.10 or later is required.
+
+```sh
+python3 -m pip install ecoaloha
+```
+
+You can also install from this checkout:
 
 ```sh
 npm install ./packages/sdk-js
