@@ -6,6 +6,7 @@ Read the [developer portal](https://ecoaloha.com/developers) and [OpenAPI specif
 ## Connect with MCP
 
 Use Streamable HTTP at https://ecoaloha.com/mcp. No API key is required.
+Find the official [EcoAloha listing on Smithery](https://smithery.ai/servers/ecoaloha/ecoaloha).
 The separate documentation server is https://ecoaloha.com/mcp/docs.
 The [server card](https://ecoaloha.com/.well-known/mcp/server-card.json) lists the product tools.
 Verified listing: [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.ArneFfm%2Fecoaloha/versions/latest).
