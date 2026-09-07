@@ -17,7 +17,7 @@
     }
   },
   "bin": {
-    "ecoaloha": "./cli.js"
+    "ecoaloha": "cli.js"
   },
   "files": ["index.js", "index.d.ts", "cli.js", "README.md"],
   "engines": {
