@@ -1,0 +1,28 @@
+name: Publish Go SDK
+on: workflow_dispatch
+permissions:
+  contents: write
+concurrency:
+  group: publish-go-sdk
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_VERSION: v0.1.0
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16
+        with:
+          go-version: '1.27.1'
+          cache: false
+      - run: go test -race ./... && go vet ./...
+        working-directory: packages/sdk-go
+      - name: Publish immutable module tag
+        run: |
+          git tag "packages/sdk-go/$RELEASE_VERSION"
+          git push origin "refs/tags/packages/sdk-go/$RELEASE_VERSION"
+      - name: Verify public module resolution
+        run: GOPROXY=https://proxy.golang.org go list -m "github.com/ArneFfm/ecoaloha-agents/packages/sdk-go@$RELEASE_VERSION"

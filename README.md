@@ -46,6 +46,14 @@ python3 -m pip install ./packages/sdk-python
 node packages/sdk-js/cli.js --sandbox destinations
 ```
 
+The Go SDK uses the standard library:
+
+```sh
+go get github.com/ArneFfm/ecoaloha-agents/packages/sdk-go@v0.1.0
+```
+
+See the [Go guide](packages/sdk-go/README.md).
+
 See the [JavaScript guide](packages/sdk-js/README.md) and [Python guide](packages/sdk-python/README.md).
 
 ## Safety and scope
@@ -61,3 +69,5 @@ Manual workflows publish the MCP listing and SDK packages separately.
 Package versions are immutable after publication. Publisher accounts must be configured first.
 For PyPI, register a pending trusted publisher for project `ecoaloha`, owner `ArneFfm`, repository `ecoaloha-agents`, workflow `publish-pypi.yml`.
 For npm, publish the first release with an account that owns `@ecoaloha`, then configure workflow `publish-npm.yml` as a trusted publisher.
+
+The manual `publish-go.yml` workflow tests and publishes an immutable Go module tag.
