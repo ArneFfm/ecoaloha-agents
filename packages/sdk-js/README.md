@@ -2,9 +2,10 @@
 
 Official source: https://github.com/ArneFfm/ecoaloha-agents.
 API documentation: https://ecoaloha.com/developers.
-Registry publication is pending. Node.js 20 or later is required.
+Node.js 20 or later is required.
 
-From a checkout, run `npm install ./packages/sdk-js` in your integration project.
+Run `npm install @ecoaloha/sdk` in your integration project.
+From a checkout, you can also run `npm install ./packages/sdk-js`.
 
 ```js
 import { EcoAloha } from "@ecoaloha/sdk";

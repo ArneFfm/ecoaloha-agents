@@ -25,7 +25,14 @@ The root `plugin.json` and `mcp.json` also form an Agent Plugin.
 ## SDKs and CLI
 
 Download installable packages from [release 0.1.0](https://github.com/ArneFfm/ecoaloha-agents/releases/tag/v0.1.0).
-Publication to npm and PyPI is pending. You can also install from this checkout:
+The JavaScript SDK and CLI are published as `@ecoaloha/sdk` on npm.
+
+```sh
+npm install @ecoaloha/sdk
+npx --package=@ecoaloha/sdk ecoaloha --sandbox destinations
+```
+
+PyPI publication is pending. You can also install from this checkout:
 
 ```sh
 npm install ./packages/sdk-js
