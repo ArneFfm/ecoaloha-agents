@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ecoaloha": {
+      "type": "http",
+      "url": "https://ecoaloha.com/mcp"
+    }
+  }
+}
