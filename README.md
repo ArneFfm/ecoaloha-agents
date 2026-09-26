@@ -21,6 +21,7 @@ npx skills add ArneFfm/ecoaloha-agents
 - [ecoaloha-api-integration](https://skills.sh/arneffm/ecoaloha-agents/ecoaloha-api-integration): integrate and test the HTTP API or MCP server.
 
 The root `plugin.json` and `mcp.json` also form an Agent Plugin.
+The [`claude-plugin`](claude-plugin) folder is the Claude plugin with the MCP connector and both skills.
 
 ## SDKs and CLI
 
