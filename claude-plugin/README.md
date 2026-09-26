@@ -36,4 +36,4 @@ The plugin runs no local code and sends data to no other destination.
 
 - Privacy: https://ecoaloha.com/privacy
 - Terms: https://ecoaloha.com/terms
-- Contact: hello@ecoaloha.com
+- Contact: https://ecoaloha.com/contact
