@@ -3,7 +3,7 @@
   "name": "io.github.ArneFfm/ecoaloha",
   "title": "EcoAloha",
   "description": "Search and compare outdoor experiences. Public keyless API; booking and payment happen on Viator.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://ecoaloha.com/developers",
   "repository": {
     "url": "https://github.com/ArneFfm/ecoaloha-agents",
