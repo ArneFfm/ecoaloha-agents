@@ -8,8 +8,10 @@ Read the [developer portal](https://ecoaloha.com/developers) and [OpenAPI specif
 Use Streamable HTTP at https://ecoaloha.com/mcp. No API key is required.
 Find the official [EcoAloha listing on Smithery](https://smithery.ai/servers/ecoaloha/ecoaloha).
 The separate documentation server is https://ecoaloha.com/mcp/docs.
+Both endpoints support stateless MCP `2026-07-28` and legacy clients. Send the protocol version and client capabilities in `params._meta`, with matching `MCP-Protocol-Version` and `Mcp-Method` headers; named tool calls also require `Mcp-Name`.
+Neither endpoint supports webhook Events: public keyless access establishes no authenticated subscription owner. A callback signing secret does not grant account access.
 The [server card](https://ecoaloha.com/.well-known/mcp/server-card.json) lists the product tools.
-Verified listing: [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.ArneFfm%2Fecoaloha/versions/latest).
+The [official MCP Registry listing](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.ArneFfm%2Fecoaloha/versions/latest) is published separately from the deployed server. `server.json` describes server release `1.2.0`; plugin and SDK versions are independent.
 
 ## Install skills
 
