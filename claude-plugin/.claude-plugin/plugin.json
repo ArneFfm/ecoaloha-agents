@@ -1,0 +1,11 @@
+{
+  "name": "ecoaloha",
+  "displayName": "EcoAloha",
+  "version": "1.0.0",
+  "description": "Find, compare and link to reviewed outdoor experiences near 133 gateway cities, and read EcoAloha's curated nature guides.",
+  "author": { "name": "EcoAloha", "url": "https://ecoaloha.com" },
+  "homepage": "https://ecoaloha.com/for-agents",
+  "repository": "https://github.com/ArneFfm/ecoaloha-agents",
+  "license": "MIT",
+  "keywords": ["travel", "outdoor", "hiking", "tours"]
+}
